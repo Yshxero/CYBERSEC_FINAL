@@ -9,7 +9,7 @@
 <body>
   <header>
     <h2 class="logo">
-      <img src="/CYBERSEC_FINAL/main/images/logo.jpeg" alt="Logo" class="logo-img">
+      <img src="/CYBERSEC_FINAL/main/images/logo.jpeg" alt="Logo" class="logo-img" />
       <span>Cyberian Huskies</span>
     </h2>
     <nav class="navigation">
@@ -33,7 +33,7 @@
       <p>This platform is designed to showcase cybersecurity skills and promote awareness during the final PIT.</p>
     </div>
   </section>
-  
+
   <section id="contact" class="section">
     <div class="text-container">
       <h1>Contact Us</h1>
@@ -42,71 +42,71 @@
   </section>
 
   <section id="login" class="section">
-        <div class="login-card">
-          <div class="form-side">
-            <form id="loginForm">
-              <div class="segment">
-                <h1>Log In</h1>
-              </div>
-
-              <label>
-                <input type="email" id="logemail" placeholder="Email Address" required />
-              </label>
-
-              <label class="password-wrapper">
-                <input type="password" id="logpassword" placeholder="Password" required />
-                <i class="icon ion-md-eye" id="togglePassword"></i>
-              </label>
-
-              <button class="red" type="submit"><i class="icon ion-md-lock"></i> Log in</button>
-
-              <p>Don't have an account? <a href="#" onclick="showSignupForm(event)">Sign Up</a></p>
-
-            </form>
-
-            <form id="signupForm" style="display: none;">
-                <div class="segment">
-                <h1>Sign Up</h1>
-                </div>
-            
-                <label>
-                <input type="text" id="signupName" placeholder="Full Name" required />
-                </label>
-            
-                <label>
-                <input type="email" id="signupEmail" placeholder="Email Address" required />
-                </label>
-            
-                <label>
-                <input type="password" id="signupPassword" placeholder="Password" required />
-                </label>
-            
-                <button class="red" type="submit"><i class="icon ion-md-person-add"></i> Sign Up</button>
-            
-                <p>Already have an account? <a href="#" onclick="showLoginForm(event)">Log In</a></p>
-            </form>
-            
+    <div class="login-card">
+      <div class="form-side">
+        <form id="loginForm">
+          <div class="segment">
+            <h1>Log In</h1>
           </div>
 
-          <div class="image-side">
-              <img src="/CYBERSEC_FINAL/images/cdo3.jpg" alt="Login Banner" />
+          <label>
+            <input type="email" id="logemail" placeholder="Email Address" required />
+          </label>
+
+          <label class="password-wrapper">
+            <input type="password" id="logpassword" placeholder="Password" required />
+            <i class="icon ion-md-eye" id="togglePassword"></i>
+          </label>
+
+          <button class="red" type="submit"><i class="icon ion-md-lock"></i> Log in</button>
+
+          <p>Don't have an account? <a href="#" onclick="showSignupForm(event)">Sign Up</a></p>
+        </form>
+
+        <form id="signupForm" style="display: none;">
+          <div class="segment">
+            <h1>Sign Up</h1>
           </div>
-        </div>
+
+          <label>
+            <input type="text" id="signupName" placeholder="Full Name" required />
+          </label>
+
+          <label>
+            <input type="email" id="signupEmail" placeholder="Email Address" required />
+          </label>
+
+          <label>
+            <input type="password" id="signupPassword" placeholder="Password" required />
+          </label>
+
+          <button class="red" type="submit"><i class="icon ion-md-person-add"></i> Sign Up</button>
+
+          <p>Already have an account? <a href="#" onclick="showLoginForm(event)">Log In</a></p>
+        </form>
+      </div>
+
+      <div class="image-side">
+        <img src="/CYBERSEC_FINAL/images/cdo3.jpg" alt="Login Banner" />
+      </div>
+    </div>
   </section>
 
   <script src="script.js"></script>
+
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
   <script>
     function openLoginForm() {
       const loginSection = document.getElementById("login");
       loginSection.scrollIntoView({ behavior: "smooth", block: "start" });
-    
+
       document.getElementById("loginForm").reset();
       document.getElementById("signupForm").style.display = "none";
       document.getElementById("loginForm").style.display = "block";
-    
+
       const imageBanner = document.querySelector(".image-side img");
       imageBanner.style.display = "block";
     }
@@ -125,18 +125,23 @@
     });
 
     function showSignupForm(event) {
-    event.preventDefault(); // prevents the # from scrolling to top
-    document.getElementById("loginForm").style.display = "none";
-    document.getElementById("signupForm").style.display = "block";
+      event.preventDefault();
+      document.getElementById("loginForm").style.display = "none";
+      document.getElementById("signupForm").style.display = "block";
+
+      const imageBanner = document.querySelector(".image-side img");
+      imageBanner.style.display = "block";
     }
 
     function showLoginForm(event) {
-    event.preventDefault(); // prevents the # from scrolling to top
-    document.getElementById("signupForm").style.display = "none";
-    document.getElementById("loginForm").style.display = "block";
+      event.preventDefault();
+      document.getElementById("signupForm").style.display = "none";
+      document.getElementById("loginForm").style.display = "block";
+
+      const imageBanner = document.querySelector(".image-side img");
+      imageBanner.style.display = "block";
     }
-
-
   </script>
+
 </body>
 </html>
