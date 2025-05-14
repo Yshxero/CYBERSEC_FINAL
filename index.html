@@ -99,14 +99,13 @@
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
   <script>
-  function openLoginForm() {
-    const loginSection = document.getElementById("login");
-    loginSection.scrollIntoView({ behavior: "smooth", block: "start" });
-    
-    document.getElementById("loginForm").reset();
-    document.getElementById("signupForm").style.display = "none";
-    document.getElementById("loginForm").style.display = "block";
-  }
+    function openLoginForm() {
+        const loginSection = document.getElementById("login");
+        loginSection.scrollIntoView({ behavior: "smooth", block: "start" });
+
+        document.getElementById("loginForm").style.display = "block";
+        document.getElementById("signupForm").style.display = "none";
+    }
     const passwordField = document.getElementById("logpassword");
     const togglePassword = document.getElementById("togglePassword");
 
