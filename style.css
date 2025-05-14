@@ -262,15 +262,15 @@ form p a {
 }
 
 #home {
-  background: url('../images/cdo2.jpeg') no-repeat center center/cover;
+  background: url('https://yshxero.github.io/CYBERSEC_FINAL/images/cdo2.jpeg') no-repeat center center/cover;
 }
 
 #about {
-  background: url('../images/cdo2.jpg') no-repeat center center/cover;
+  background: url('https://yshxero.github.io/CYBERSEC_FINAL/images/cdo2.jpg') no-repeat center center/cover;
 }
 
 #contact {
-  background: url('../images/cdo3.jpg') no-repeat center center/cover;
+  background: url('https://yshxero.github.io/CYBERSEC_FINAL/images/cdo3.jpg') no-repeat center center/cover;
 }
 
 .section h1 {
